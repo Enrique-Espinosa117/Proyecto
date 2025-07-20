@@ -1,0 +1,146 @@
+*{
+    margin: 0; /*espacio alrededor de un elemento o separar elementos entre sí*/
+    padding: 0; /*Crea espacio dentro del borde, no por fuera como margin*/
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Caveat', cursive; 
+    text-align: center;
+}
+
+
+ul{
+    list-style-type:none;
+    display: flex;  /*se comportará de manera flexible*/
+    justify-content: center; /*centra los elementos horizontalmente dentro del contenedor*/
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 80px; /*tamaño de la fuente*/
+    font-family: 'Caveat', cursive; /*tipo de fuente*/
+    text-align: center; /*alinear texto al centro*/
+}
+h2{
+    font-size: 40px; 
+    font-family: 'Caveat', cursive; 
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.logo{
+    width: auto; 
+    height: auto;
+    display:flex; /* Establece el modelo de caja flexible (Flexbox), útil para alinear elementos hijos */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */
+    align-items: center;  /* Centra verticalmente los elementos hijos dentro del contenedor */
+    overflow: hidden;  /* Oculta cualquier contenido que se salga del área visible del contenedor */
+
+}
+
+.logo-1{
+    color: rgb(110, 46, 8);
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    padding-right: 10rem;
+    padding-left: 30rem;
+}
+
+
+
+    
+    /* Estilo del formulario del buscador */
+.buscador .form {
+    padding-right: 1rem;
+    display: flex;       /* Hace que el input y el botón estén en línea horizontal */
+    align-items: center; /* Los alinea verticalmente al centro */
+}
+    
+
+/* Campo de entrada del texto */
+.buscador .input {
+  height: 30px;
+  font-size: 100%;
+  padding: 5px 10px;
+  border: 4px solid saddlebrown;
+  border-radius: 20px;
+}
+
+
+/* Botón "Buscar" */
+.buscador .buscar_boton {
+padding: 5px 10px;   /* Espaciado interno */
+margin-left: 5px;    /* Separación entre el input y el botón */
+cursor: pointer;     /* Cambia el cursor al pasar por encima */
+}
+
+li{
+    margin: 40px;
+}
+
+/* Contenedor que colocamos en la esquina superior derecha */
+.contenedor-superior-derecha {
+    position: absolute; /* Permite posicionarlo respecto al documento */
+    top: 10px;           /* Se separa 10px del borde superior */
+    right: 10px;         /* Se separa 10px del borde derecho */
+    display: flex;       /* Coloca los elementos internos en una fila horizontal - es para que e comporte de forma flexible */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    gap: 20px;           /* Espacio entre el buscador y los iconos */
+    z-index: 1000;       /* Se asegura de estar por encima de otros elementos */
+}
+
+/* Contenedor de los íconos de usuario donde está fav. bolsa, etc*/
+.acciones.usuario {
+    display: flex;       /* Íconos en una línea horizontal */
+    align-items: center; /* Alineados verticalmente */
+    gap: 10px;           /* Espacio entre cada ícono */
+}
+
+
+/* Estilo para cada ícono con su contador */
+.acciones_usuario_boton {
+    position: relative; /* Necesario para posicionar el contador encima del ícono */
+}
+
+
+/* Tamaño de cada imagen de ícono */
+.acciones_usuario_boton img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* El contador rojo (número encima del ícono) */
+.cuenta {
+    position: absolute;      /* Lo posicionamos sobre el ícono */
+    top: -5px;               /* Lo subimos un poco */
+    right: -10px;            /* Lo desplazamos a la derecha */
+    background-color: red;   /* Fondo rojo */
+    color: white;            /* Texto blanco */
+    border-radius: 50%;      /* Forma de círculo */
+    padding: 2px 6px;        /* Espaciado interno */
+    font-size: 12px;         /* Tamaño del número */
+}
+
+
+
+.elemento {
+  min-width: 200px; /* ajusta al tamaño de tus tarjetas */
+  flex-shrink: 0; /* evita que se reduzcan */
+}
+
+
+.elemento {
+
+    display: flex;s
+}
+    
