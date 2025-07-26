@@ -1,0 +1,507 @@
+*{
+    margin: 0; /*espacio alrededor de un elemento o separar elementos entre sí*/
+    padding: 0; /*Crea espacio dentro del borde, no por fuera como margin*/
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Caveat', cursive; 
+    text-align: center;
+}
+
+
+
+
+
+h1{
+    font-size: 80px; /*tamaño de la fuente*/
+    font-family: 'Caveat', cursive; /*tipo de fuente*/
+    text-align: center; /*alinear texto al centro*/
+}
+h2{
+    font-size: 40px; 
+    font-family: 'Caveat', cursive; 
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.logo{
+    width: auto; 
+    height: auto;
+    display:flex; /* Establece el modelo de caja flexible (Flexbox), útil para alinear elementos hijos */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */
+    align-items: center;  /* Centra verticalmente los elementos hijos dentro del contenedor */
+    overflow: hidden;  /* Oculta cualquier contenido que se salga del área visible del contenedor */
+
+}
+
+.logo-1{
+    color: rgb(110, 46, 8);
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    padding-right: 10rem;
+    padding-left: 30rem;
+}
+
+
+
+    
+    /* Estilo del formulario del buscador */
+.buscador .form {
+    padding-right: 1rem;
+    display: flex;       /* Hace que el input y el botón estén en línea horizontal */
+    align-items: center; /* Los alinea verticalmente al centro */
+}
+    
+
+/* Campo de entrada del texto */
+.buscador .input {
+  height: 30px;
+  font-size: 100%;
+  padding: 5px 10px;
+  border: 4px solid saddlebrown; /* Borde del espacio del buscador - marrón */
+  border-radius: 20px;
+}
+
+
+/* Botón "Buscar" */
+.buscador .buscar_boton {
+padding: 5px 10px;   /* Espaciado interno */
+margin-left: 5px;    /* Separación entre el input y el botón */
+cursor: pointer;     /* Cambia el cursor al pasar por encima */
+}
+
+li{
+    margin: 40px;
+}
+
+/* Contenedor que colocamos en la esquina superior derecha */
+.contenedor-superior-derecha {
+    position: absolute; /* Permite posicionarlo respecto al documento */
+    top: 10px;           /* Se separa 10px del borde superior */
+    right: 10px;         /* Se separa 10px del borde derecho */
+    display: flex;       /* Coloca los elementos internos en una fila horizontal - es para que e comporte de forma flexible */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    gap: 20px;           /* Espacio entre el buscador y los iconos */
+    z-index: 1000;       /* Se asegura de estar por encima de otros elementos */
+}
+
+/* Contenedor de los íconos de usuario donde está fav. bolsa, etc*/
+.acciones.usuario {
+    display: flex;       /* Íconos en una línea horizontal */
+    align-items: center; /* Alineados verticalmente */
+    gap: 10px;           /* Espacio entre cada ícono */
+}
+
+
+/* Estilo para cada ícono con su contador */
+.acciones_usuario_boton {
+    position: relative; /* Necesario para posicionar el contador encima del ícono */
+}
+
+
+/* Tamaño de cada imagen de ícono */
+.acciones_usuario_boton img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* El contador rojo (número encima del ícono) */
+.cuenta {
+    position: absolute;      /* Lo posicionamos sobre el ícono */
+    top: -5px;               /* Lo subimos un poco */
+    right: -10px;            /* Lo desplazamos a la derecha */
+    background-color: red;   /* Fondo rojo */
+    color: white;            /* Texto blanco */
+    border-radius: 50%;      /* Forma de círculo */
+    padding: 2px 6px;        /* Espaciado interno */
+    font-size: 12px;         /* Tamaño del número */
+}
+
+
+.nav_list{
+    list-style-type:none;
+    display: flex;  /*se comportará de manera flexible*/
+    justify-content: center; /*centra los elementos horizontalmente dentro del contenedor*/
+    padding:0px 0px; /*espacio interno del contenedor, no por fuera como margin, controla el espacio alrededor de cada enlace.*/
+    margin: 0; /*elimina el margen por defecto, o se puede modificar la separación de todo a su alrededor*/
+
+}
+
+.nav_list a {
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;         /*  Controla el tamaño de los enlaces */
+    display: inline-block;
+}
+
+
+.nav_list{
+    color: white; /*color de la fuente*/
+    text-decoration: none; /*elimina el subrayado de los enlaces*/
+    background-color:rgba(131, 74, 9, 0.596);
+}
+
+
+/*Portada con texto en medio*/
+.portada {
+  position: relative;       /* Necesario para que el texto se posicione dentro de este div */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*Con lo siguiente pondremos el texto dentro de la imagen*/
+.portada-contenido {
+  position: absolute;       /* Permite posicionar el texto sobre la imagen */
+  top: 50%;                 /* Centra verticalmente */
+  left: 50%;                /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta la posición para que esté centrado */
+  text-align: center;       /* Alinea el texto al centro */
+  color: white;             /* Color del texto */
+  padding: 1em; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */ 
+  max-width: 90%; /* Ancho máximo del contenedor de texto */
+  font-size: 2em;           /* Tamaño del texto */
+  font-family: 'Caveat', cursive; /* Tipo de letra */
+}
+
+/*Estilos del texto*/
+.portada-titulo {
+  font-size: 2.5em; /* Tamaño del título */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 0.5em; /* Espacio debajo del título */
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Tipo de letra del título */
+}
+
+.portada {
+    margin-bottom: 100px; /* Espacio debajo del título */
+}
+
+
+/*Sección de recomendaciones*/
+.productos {
+        margin-bottom: 10em; /* Espacio debajo de la sección de libros - uilizar para el espaciado entre secciones*/
+
+}
+
+/*Parte de las recomendaciones - formato del texto*/
+.titulo-b {
+        margin-bottom: 2em; /* Espacio debajo de la sección de libros - uilizar para el espaciado entre secciones*/
+        margin-left: 2em; /*separa el texto del margen izquierdo*/
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold; /*negrita*/
+        color:rgb(180, 48, 16);
+      
+
+}
+
+
+.seccion_recomendaciones {
+    display: block;
+    padding: 5em 3em; /*CSS permite definir padding (igual que margin, border, etc.) usando varios valores en orden. 5em → padding arriba y abajo 3em → padding izquierda y derecha*/ 
+    
+}
+
+/*Esto modificará la imagen que se encuentra dentro de una tarjeta de libro, la cual es la que está abajo como .card*/
+.img-libro {
+    width: 200px; /* Ancho de la imagen */
+    height: autopx; /* Alto de la imagen */
+    object-fit: cover;
+}
+
+
+.contenedor {
+    display: flex;
+    gap: 5em; /* Espacio entre los elementos hijos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si no caben en una sola */
+    justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    
+
+}
+
+
+.card {
+    width: 400px; /* Ancho fijo para cada tarjeta, del espacio donde está la imagen del libro*/
+    height: auto;
+    border: 0px solid #ccc; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: .8em; /* Espaciado interno */
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidad */
+    background-color: #f9f9f9; /* Color de fondo claro */   
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+/* Estilo de la sección de libros - carrusel*/
+
+.titulo-c {
+        margin-bottom: 0.5em; /* Espacio debajo de la sección de libros - uilizar para el espaciado entre secciones*/
+        margin-left: 2em; /*separa el texto del margen izquierdo*/
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold; /*negrita*/
+        color:rgb(180, 48, 16);
+
+}
+
+
+.seccion_libros{
+    display: block; /* Permite que los elementos hijos se apilen verticalmente */
+    padding: 5em 3em; /*CSS permite definir padding (igual que margin, border, etc.) usando varios valores en orden. 5em → padding arriba y abajo 3em → padding izquierda y derecha*/
+}
+
+.barra_libros{
+    display: flex;
+    align-items: baseline; /* Alinea los elementos hijos a la línea base del texto */
+    justify-content: space-between;
+}
+
+/*ESTILO DE BOTON VER MAS*/
+.mas_libros{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#911c0d;
+    margin-right: 10px;
+}
+
+
+/*Formato para el carrusel*/
+.carrusel_libros{
+    display: flex;
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 0.5em;
+} /*no funcionó y lo puse en libros_mas*/
+
+.seccion_libros {
+    margin-bottom: 8em; /* Espacio debajo de la sección de libros - uilizar para el espaciado entre secciones*/
+}
+
+.libros_mas {
+
+    gap: 10em;         /* Espacio horizontal entre los libros */
+    display: flex;
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 5em;
+
+}
+
+
+.box-compra{
+    display: flex;
+}
+
+.elemento img{
+    flex-shrink: 0;
+    width: 200px;                /* Mismo ancho para todos */
+    height: 100%;                /* Ocupa todo el alto posible del contenedor */
+}
+
+/*Tamaño de las imagenes de los libros del carrusel*/
+.img-1 {
+    width: 150px; /* Ancho de la imagen */
+    height: 220px; /* Alto de la imagen */
+    object-fit: cover;
+}
+
+
+
+div .box-compra{
+    padding: 1px;
+	gap: 2em;
+}
+
+
+.box-compra .precio {
+    color:#976905;
+    font-size: 18px;
+}
+
+/* Estilo de la tarjeta de compra */
+.card-txt .btn-compra {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+    font-size: 0.7em;
+	background: #911c0d;
+    border: 1px #911c0d;
+}
+
+/* Estilo del botón de compra */
+.btn-compra {
+	display: inline-block;
+	padding: 0.6em 1.7em;
+	border-radius: 0.3em;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+}
+
+
+
+/*Sección de conocenos*/
+.conocenos {
+  display: flex; /* Utiliza Flexbox para alinear las iamgenes */
+  align-items: center;       /* Alinea verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+  gap: 40px;                  /* Espacio entre texto e imagen */
+  padding: 20px; /* Espaciado interno */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor, para que empiecen a la misma altura el texto y la imagen */
+}
+
+
+
+.tunel-texto {
+    margin-bottom: 1em; /* Espacio debajo del texto */
+}
+.conocenos-texto {
+  text-align: justify;
+  flex: 1 ; /* Ocupa el espacio restante */
+  padding: 100em, 0; 
+  font-size: larger; /* Tamaño de la fuente */
+  
+}
+
+.conocenos-titulo {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#911c0d;
+    margin-right: 10px;
+    margin-bottom: 0.5em;
+}
+
+#sucursal_invitación {
+  text-align: center;
+  font-weight: bold;
+  color:#911c0d ;
+}
+
+.sucursal_imagen {
+  flex: 1;
+  text-align: right; /* Alinea la imagen a la derecha */
+  margin-bottom: 5em; /* Espacio debajo de la imagen */
+}
+
+.sucursal_imagen {
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  height: 35em;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+/*Sección de footer*/
+
+.main-footer {
+  background-color:rgba(131, 74, 9, 0.596);
+  color: white; /* Color del texto */
+  padding: 2em; /* Espaciado interno */
+  font-family: Arial, sans-serif;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between; /* distribuye las columnas de manera uniforme */
+  gap: 3em; /* espacio entre las secciones o columnas */
+
+}
+
+/*Titulo de El tunel*/
+.footer_titulo {
+    font-size: 2em; /* tamaño del título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; /* negrita */
+    margin-bottom: 0.5em; /* espacio debajo del título */
+}
+
+/*TItulo de información*/
+.footer_titulo-2 {
+    font-size: 2em; /* tamaño del título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; /* negrita */
+    margin-bottom: 0.5em; /* espacio debajo del título */
+}
+
+/*Titulo de suscríbete*/
+.footer_titulo-3 {
+    font-size: 2em; /* tamaño del título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; /* negrita */
+    margin-bottom: 0.5em; /* espacio debajo del título */
+}
+
+.footer-section {
+  flex: 1; /* cada sección toma igual espacio */
+  min-width: 250px; /* para que no se haga muy pequeña */
+}
+
+/*Darle estilos a la scolumnas*/
+
+.footer-left {
+  /* Ajusta textos e imágenes */
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column; /* Coloca los enlaces en una columna */
+  gap: 0.5em; /* Espacio entre los enlaces */
+}
+
+.footer-center a.footer_link {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  
+}
+
+
+.footer-right form.footer_subscripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.footer_input {
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.suscripcion_enviar {
+  background-color: #855016;
+  border: none;
+  color: white;
+  padding: 0.6em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suscripcion_enviar:hover {
+  background-color: #a6711f;
+}
+
+/* Ajustes para las redes sociales */
+.redes-sociales {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.img_redes {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
